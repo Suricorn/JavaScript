@@ -1,0 +1,206 @@
+/* body::before {
+  content: "";
+  background-image: url(https://gitlab.cse.unsw.edu.au/COMP6080/22T3/students/z5211167/ass1/-/raw/master/task3/page_small.png);
+  opacity: 0.9;
+  position: absolute;
+  background-size: cover;
+  height: 2902px;
+  width: 585px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+body::before {
+  content: "";
+  background-image: url(https://gitlab.cse.unsw.edu.au/COMP6080/22T3/students/z5211167/ass1/-/raw/master/task3/page_big.PNG);
+  background-size: cover;
+  opacity: 0;
+  position: absolute;
+  height: 665px;
+  width: 1022px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+} */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 585px;
+  height: 2902px;
+}
+
+#top-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+img {
+  width: 45%;
+  height: 7%;
+  margin-left: 120px;
+}
+
+.icon-text {
+  width: 468px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(22, 180, 199);
+  margin-top: 35px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#bottom-part {
+  background-color: rgb(215, 242, 243);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+  margin-top: 20px;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(22, 180, 199);
+  text-align: center;
+  padding-top: 80px;
+}
+
+#subtitle {
+  width: 40%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  color: rgb(137, 143, 153);
+  padding-top: 40px;
+  margin-bottom: -45px;
+}
+
+.box {
+  width: 430px;
+  height: 272px;
+  border-radius: 15px;
+  position: relative;
+  margin: 20px;
+}
+
+p {
+  width: 50%;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding-top: 7%;
+  padding-left: 26%;
+  position: relative;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.blue {
+  background-color: rgb(127, 192, 198);
+}
+
+.red {
+  background-color: rgb(236, 22, 32);
+}
+
+@media only screen and (min-width: 700px) {
+  #container {
+    width: 1022px;
+    height: 665px;
+  }
+
+  #top-part {
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 20px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .image-box {
+    margin-right: -135px;
+  }
+
+  img {
+    width: 150px;
+    height: 160px;
+  }
+
+  .icon-text {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(22, 180, 199);
+    position: relative;
+    left: -40px;
+    top: -12px;
+  }
+
+  #bottom-part {
+    width: 1022px;
+    display: block;
+  }
+
+  #title {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(22, 180, 199);
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  #subtitle {
+    width: 100%;
+    font-size: 16px;
+    line-height: 0px;
+    margin-top: -15px;
+  }
+
+  #box-part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 65px;
+    margin-top: 20px;
+  }
+
+  .box {
+    flex: 1;
+    height: 160px;
+    margin-top: -5px;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  p {
+    width: 55%;
+
+    font-size: 20px;
+    color: white;
+    padding-top: 10%;
+    padding-left: 23%;
+    word-spacing: 1px;
+  }
+}
