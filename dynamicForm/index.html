@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-row-gap: 10px;
+        width: 30%;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        width: 320px;
+        text-align: left;
+        font-weight: 400;
+      }
+
+      #remove-button {
+        width: 70px;
+      }
+
+      .textarea {
+        margin-top: 10px;
+        width: 430px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+      }
+
+      #firstName,
+      #lastName,
+      #date {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <table id="myTable">
+        <tr>
+          <th>First name</th>
+          <th>
+            <input type="text" id="firstName" onblur="submit()" />
+          </th>
+        </tr>
+
+        <tr>
+          <th>Last name</th>
+          <th>
+            <input maxlength="50" type="text" id="lastName" onblur="submit()" />
+          </th>
+        </tr>
+
+        <tr>
+          <th>Date of birth</th>
+          <th>
+            <input type="text" id="date" onblur="submit()" />
+          </th>
+        </tr>
+
+        <tr>
+          <th>Favourite cheese</th>
+          <th>
+            <select id="cheese" onchange="submit()">
+              <option value="haloumi">Haloumi</option>
+              <option value="brie">Brie</option>
+            </select>
+          </th>
+        </tr>
+
+        <tr>
+          <th>Cities lived in</th>
+          <th>
+            <span id="cities">
+              <input type="checkbox" value=" Adelaide" onchange="submit()" />
+              Adelaide
+              <br />
+              <input type="checkbox" value=" Perth" onchange="submit()" /> Perth
+              <br />
+              <input type="checkbox" value=" Hobart" onchange="submit()" />
+              Hobart
+              <br />
+              <input type="checkbox" value=" Darwin" onchange="submit()" />
+              Darwin
+            </span>
+          </th>
+        </tr>
+      </table>
+
+      <input
+        type="reset"
+        id="remove-button"
+        value="Remove"
+        onclick="removeText()"
+      />
+
+      <div class="textarea">
+        <p id="outputText"></p>
+        <p id="log"></p>
+      </div>
+    </div>
+
+    <script src="task4.js"></script>
+  </body>
+</html>
+
