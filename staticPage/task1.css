@@ -1,0 +1,68 @@
+body::before {
+  content: "";
+  background-image: url(https://gitlab.cse.unsw.edu.au/COMP6080/22T3/students/z5211167/ass1/-/raw/master/task1/page.PNG);
+  background-size: cover;
+  opacity: 0;
+  height: 664px;
+  width: 1220px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  width: 1220px;
+  height: 664px;
+}
+
+.header {
+  font-size: 30pt;
+  text-align: center;
+  margin-top: 29px;
+  color: #92156a;
+}
+
+#parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.element {
+  background-color: #ffffff;
+  width: 365px;
+  height: 490px;
+  margin-top: 70px;
+  margin-right: 15px;
+}
+
+.text1 {
+  font-size: 19pt;
+  text-align: center;
+  margin-top: 49px;
+  margin-bottom: 20px;
+  color: #92156a;
+}
+
+.text2 {
+  font-size: 16pt;
+  text-align: center;
+  margin-left: 9px;
+  margin-right: 10px;
+  color: #4d4d4d;
+}
+
+img {
+  width: 365px;
+  height: 325px;
+}
+
